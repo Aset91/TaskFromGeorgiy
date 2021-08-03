@@ -13,7 +13,7 @@ public class Cat extends Animal {
     }
 
     @Override
-    public void run(int distance) throws ActionsException {
+    public void run(int distance) {
 
         if (distance > 200) {
             throw new ActionsException("Кошка не может пробежать более 200 м");
@@ -27,7 +27,7 @@ public class Cat extends Animal {
 
 
     @Override
-    public void swim(int distance) throws ActionsException {
+    public void swim(int distance) {
         throw new ActionsException("Кошка не умеет плавать");
     }
 }

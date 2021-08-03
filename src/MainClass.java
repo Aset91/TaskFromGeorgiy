@@ -1,7 +1,7 @@
 
 public class MainClass {
 
-    public static void main(String[] args) throws ActionsException {
+    public static void main(String[] args) {
 
         Cat cat = new Cat("Мурка");
         Dog dog = new Dog("Бобик");
@@ -15,7 +15,6 @@ public class MainClass {
         dog.run(400);
         dog.swim(5);
         cat.swim(89);
-
 
     }
 }

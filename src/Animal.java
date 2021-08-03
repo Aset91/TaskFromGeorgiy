@@ -4,8 +4,8 @@ public abstract class Animal {
         Counters.animalsCounter++;
     }
 
-    public abstract void run(int distance) throws ActionsException;
+    public abstract void run(int distance);
 
-    public abstract void swim(int distance) throws ActionsException;
+    public abstract void swim(int distance);
 
 }

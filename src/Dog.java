@@ -13,7 +13,7 @@ public class Dog extends Animal {
 
 
     @Override
-    public void run(int distance) throws ActionsException {
+    public void run(int distance) {
         if (distance < 0) {
             throw new ActionsException("Задано неверное значение");
         }
@@ -25,7 +25,7 @@ public class Dog extends Animal {
     }
 
     @Override
-    public void swim(int distance) throws ActionsException {
+    public void swim(int distance) {
         if (distance < 0) {
             throw new ActionsException("Задано неверное значение");
         }
