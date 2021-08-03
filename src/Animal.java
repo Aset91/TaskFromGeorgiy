@@ -1,14 +1,11 @@
-public class Animal {
-public static int animalsCounter;
+public abstract class Animal {
 
     public Animal() {
-        animalsCounter++;
+        Counters.animalsCounter++;
     }
 
-    public void run(int distance) throws ActionsException{
-    }
+    public abstract void run(int distance) throws ActionsException;
 
-    public void swim(int distance) throws ActionsException{
+    public abstract void swim(int distance) throws ActionsException;
 
-    }
 }

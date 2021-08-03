@@ -1,9 +1,6 @@
-public class ActionsException extends Exception {
+public class ActionsException extends RuntimeException {
 
-    public ActionsException() {
-    }
-
-    public ActionsException(String message) {
+      public ActionsException(String message) {
         super(message);
     }
 

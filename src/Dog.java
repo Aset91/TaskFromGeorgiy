@@ -1,14 +1,22 @@
 public class Dog extends Animal {
-    public String name;
-    public static int dogsCounter;
+
+    private String name;
 
     public Dog(String name) {
         this.name = name;
-        dogsCounter++;
+        Counters.dogsCounter++;
     }
+
+    public String getName() {
+        return name;
+    }
+
 
     @Override
     public void run(int distance) throws ActionsException {
+        if (distance < 0) {
+            throw new ActionsException("Задано неверное значение");
+        }
         if (distance > 500) {
             throw new ActionsException("Собака не может пробежать более 500 м");
         } else {
@@ -18,6 +26,9 @@ public class Dog extends Animal {
 
     @Override
     public void swim(int distance) throws ActionsException {
+        if (distance < 0) {
+            throw new ActionsException("Задано неверное значение");
+        }
         if (distance > 10) {
             throw new ActionsException("Собака не может проплыть более 10 м");
         } else {
